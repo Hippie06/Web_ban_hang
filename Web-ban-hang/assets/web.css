@@ -1,0 +1,113 @@
+body{
+    background-color: aliceblue;
+}
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #292b2c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+}
+.nav{
+    background-color: rgb(238, 242, 245);
+    display: flex;
+    height: 4em;
+    line-height: 4em;
+    justify-content: space-between;
+    border-bottom: 1px solid #292b2c;
+}
+.logo{
+    font-size: 2em;
+    padding-left: 3em;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-right: 2.5em;
+    font-size: 17px;
+}
+.menu li a:hover{
+    color: purple;
+    transition: color .2s ease-out;
+}
+.menu-down{
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+    line-height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: 68px;
+    left: -15px;
+    display: none;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 5px 0 rgba(22, 22, 22, 0.26);
+    background-color: azure;
+}
+.menu-down li{
+    padding: 10px;
+}
+.menu-down li a:hover{
+    color: purple;
+    
+}
+.menu-link{
+    position: relative;
+}
+.menu .menu-link:hover .menu-down{
+    display: block;
+}
+.icon{
+    padding-right: 50px;
+    font-size: 30px;
+}
+.icon a{
+    padding: 5px;
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.content .list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 5px;
+    justify-content: space-between;
+}
+.item{
+    width: 250px;
+    margin: 10px 0;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: white;
+    text-align: center;
+    transition: transform ease-in 0.1s;
+}
+.item:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 20px 0 rgba(22, 22, 22, 0.26);
+}
+.item img{
+    width: 250px;
+    height: 300px;
+}
+.item p{
+    font-weight: 600;
+}
+.footer{
+    height: 200px;
+    margin: 0 auto;
+    padding: 30px 150px;
+    background-color: azure;
+    display: flex;
+    border-top: 1px solid #292b2c;
+    justify-content: space-between;
+}
+.footer img{
+    width: 200px;
+    height: 200px;
+}
